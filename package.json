@@ -1,0 +1,29 @@
+{
+  "name": "bamazon",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mqschwanda/RCB-Bamazon.git"
+  },
+  "description": "Amazon-like storefront with MySQL under the hood. The app takes in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.",
+  "main": "server.js",
+  "scripts": {
+    "setup": "npm i",
+    "customer": "node bamazon-customer.js",
+    "manager": "node bamazon-manager.js",
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MQSchwanda",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "configurable": "0.0.1",
+    "inquirer": "^2.0.0",
+    "json-table": "^0.1.3",
+    "mysql": "^2.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
